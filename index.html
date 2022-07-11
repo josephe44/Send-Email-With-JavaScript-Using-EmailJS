@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Contact Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact page</h1>
+      <form class="form" id="form">
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="text"
+            name="from_name"
+            id="from_name"
+            placeholder="Enter Fullname"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="email"
+            name="reply_to"
+            id="reply_to"
+            placeholder="Enter Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            class="form-control"
+            name="message"
+            id="message"
+            placeholder="Enter Message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" id="button" class="btn btn-block">Send</button>
+      </form>
+    </div>
+
+    <!-- script for emailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
